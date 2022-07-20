@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+/*
+
+NavBar
+
+*/
+
+.nav-item{
+    margin-right: 120px;
+}
+
+#nav{
+    width: 100%;
+}
+
+
+.logo{
+    transform: scale(0.3 );
+}
+
+/*
+
+Hero-section
+
+*/
+.container h1{
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.hero-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(176.73deg, rgba(61, 163, 245, 0.7) 24.37%, rgba(50, 76, 138, 0)), url(./img/sigmund-SQkDTnerAGk-unsplash.jpg);
+}
+
+#service-container{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+/* 
+
+Service Listing section
+
+*/
+#service-container h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#service-listing{
+    text-align: center;
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+.text-container{
+    width: 55%;
+    padding: 15px;
+    box-shadow:5px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.text-container:hover{
+    width: 55%;
+    padding: 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow:6px 9px 6px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #e9eaeb;
+}
+
+.text-box{
+    text-decoration-line: none;
+
+}
+
+.text-box li{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#service-listing h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 50px;
+}
+
+.arrow-services-icon{
+  position: relative;
+  padding-right: -40px;  
+}
+
+/*
+
+contact 
+
+*/
+#contact-section{
+    width: 100%;
+}
+
+.get-in-touch-h1{
+    font-weight: 500;
+    padding: 2px;
+    padding-top: 50px;
+}
+
+#contact-form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.form-control{
+    border-radius: 0px;
+    border-top: 20px;
+    border-right: 2px;
+    border-left: 0px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: #0d6efd;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*
+
+footer
+
+*/
+.footer-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container{
+    margin-left: 120px;
+    padding-top: 70px;
+    width: 200px;
+}
+
+.contact-info{
+    width: 200px;
+    margin-top: 80px;
+    margin-left: 220px;
+}
+
+
+
+/*
+
+########   About Us Page   ########
+
+
+Hero-Section
+
+*/
+
+#aboutus-container #container{
+    margin-left: 105%;
+}
+
+#linkedin{
+    margin-top: -110px;
+}
+
+#linkedin:hover{
+    margin-top: -110px;
+    transform: scaleY(2);
+    transform: scaleY(2);
+    transform: scaleZ(2);
+}
+
+#aboutus-container{
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.hero-section-about{
+    color: white;
+    height: 70vh;
+    background-size:contain;
+    background: linear-gradient(154.72deg, rgba(50, 24, 207, 0.485) -0.68%, rgba(50, 24, 207, 0.485) 36.74%, rgba(217, 217, 217, 0)), url(./img/graphic-designers-discussing-laptop\ 1.png);
+ 
+
+}
+
+/*
+
+Text-section
+
+*/
+
+#p-container{
+    padding: 10%;
+    padding-bottom: 1%;
+    width: 66%;
+    text-align: justify;
+}
+
+#p-container h1{
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: -90px;
+
+}
+
+#service-list{
+    margin-top: 50px;
+}
+
+#service-list h2{
+    font-size: 24px;
+}
+
+#service-list ul a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+/*
+
+######   Home  ######
+
+
+Home hero-section
+
+*/
+
+@media screen and (max-width: 500px){
+    .hero-section-home .container{
+        width: 44%;
+        color: white;
+        position: relative;
+        padding-top: 12%;
+        padding-bottom: 10%;
+        margin-left: 10%;
+        font-size: 0.5em;
+    }
+
+    .hero-section-home .container h1{    
+        font-weight: 700;
+    }
+
+    .scff-brief-img{
+        transform: scale(2);
+        opacity: 0.9;
+        padding-left: 0%;
+        padding-top: 13%;
+    }
+}
+
+
+
+.hero-section-home{
+    background: linear-gradient(108.98deg, rgba(29, 4, 187, 0.4) 54.3%, rgba(217, 217, 217, 0)), url(./img/Home-herosectionimg.jpg);
+    background-size: cover;
+}
+
+.hero-section-home .container{
+    width: 44%;
+    color: white;
+    position: relative;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    margin-left: 10%;
+}
+
+.hero-section-home .container h1{
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.learn-more-btn{
+    background-color: white;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0;
+    border: 0;
+    margin-top: 90px;
+}
+
+/*
+
+SCFF Brief Section
+
+*/
+
+.scff-brief{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.scff-brief .container .row .col{
+    padding: 50px;
+}
+
+.scff-brief-img{
+    transform: scale(2);
+    opacity: 0.3;
+    padding-left: 20%;
+    padding-top: 13%;
+}
+
+#brief{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+#value-proposition{
+    background: #66666686;
+    color: white;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 140%;
+    text-align: justify;
+    text-align: center;
+}
+
+#value-proposition p{
+   
+}
+
+.value-prop-img{
+    position: absolute;
+    margin-top: -60px;
+    z-index: -1;
+    margin-left: -140px;
+}
+
+
+/*
+
+Pitch Section
+
+*/
+
+.simple-cta{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.pitch-text{
+    padding: 50px;
+    margin-top: -90px;
+}
+
+.pitch-text h6{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.pitch-text h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+
+Clients Section
+
+*/
+
+.clients .container{
+    text-align: center;
+    width: 50%;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.clients .container h1{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
