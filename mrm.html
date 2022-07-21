@@ -24,7 +24,17 @@
                 <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./services.html">Services</a>
+                <div class="dropdown">
+                  <button>services <img src="./img/icons8_expand_arrow_60px.png"/></button>
+                  <div class="dropdown-content">
+                  <a href="./grc.html">Governance Risk compliance (GRC)</a>
+                  <a href="./IT.html">Information Technology</a>
+                  <a href="mrm.html">Model Risk Management & Quants</a>
+                  <a href="aas.html">Audit & Assessment Support</a>
+                  <a href="agiless.html">Agile support services</a>
+                  <a href="#">Banking & Capital Markets</a>
+
+                  </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./About.html">About</a>
@@ -42,26 +52,15 @@
           <h1> Model Risk Management & Quants (MRM).   
             SCFF’s Approach to MRM Governance </h1>
     
-          <p>Our FSI clients operate in a dynamic and highly regulated environment with new stringent
-             regulations being enacted constantly. They need seasoned GRC professionals who can help 
-             ensure they are complying with all regulations and industry requirements in place, and 
-             that their business is protected against fines / violations and reputational risk.
+          <p>In response to heightened regulatory scrutiny and increasing demands for qualified MRM SME’s
+             in a changing FSI regulatory landscape. SCFF helps FSI to create and strengthen their model 
+             risk management (MRM) framework.  We combine industry-standard approaches and insights from
+              our work with SIFI”s, we help clients create best-practice, sustainable foundations for MRM.
+               We also assist them in building new capabilities, and in deploying new technology to meet
+                increasing regulatory expectations efficiently.
+
           </p>
 
-          <p>We pride ourselves for building a team of highly experienced GRC recruitment professionals
-             who has assembled a highly curated network of experienced GRC talents over the years.
-            Our GRC recruiters work closely with our clients and candidates to understand their 
-            requirements and customize the best fit and match that supports business objectives. 
-            Our solution encompasses people, processes, and technology that enables a company to establish
-             GRC objectives in line with the corporate values and risk tolerance.
-          </p>
-    
-          <p>
-            We have some of the best professional recruiters in regulatory compliance and legal recruiting
-             space, who works tirelessly to identify, vet and onboard skilled financial crimes, risk management
-              and regulatory compliance  experienced practitioners to solve your GRC challenges. SCFF’s Governance,
-             Risk & Compliance Focus Areas include:
-          </p>
           <br/>
           <b><h5>Model Risk Management & Quants</h5></b>
     
@@ -104,17 +103,17 @@
               </div>
             </div>
             <div class="w-200"></div>
-              <div class="container">
+            <div class="container">
+              <div class="col">
                 <b><h5>Model Development, Implementation, Use & Monitoring</h5></b>
                 <li>Model Development & Implementation</li>
                 <li>Model certification/approval</li>
                 <li>Model Use</li>
                 <li>Ongoing Model Monitoring/frequency of testing</li>
-                <div class="col">
               </div>
             </div>
-    
             <div class="col">
+              <div class="container">
                 <b><h5>Model Validation</h5></b>
                 <li>Independent Model Validation Group/Process</li>
                 <li>Frequency of Model Review (Annually)</li>
@@ -122,6 +121,7 @@
                 <li>Outcome Analysis</li>
                 <li>Ongoing Model Monitoring & Maintenance</li>
                 <li>Validation of Vendor & Third Party Models</li>
+              </div>
             </div>
     
           </div>
@@ -137,7 +137,7 @@
             
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" class="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                     <h2 class="h1-responsive font-weight-bold my-4 get-in-touch-h1">Get in touch</h2>
                     <!--Grid row-->
                     <div class="row">
@@ -145,7 +145,7 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control name">
+                                <input type="text" id="name" name="name" class="form-control">
                                 <label for="name" class="">Your name</label>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control email">
+                                <input type="text" id="email" name="email" class="form-control">
                                 <label for="email" class="">Your email</label>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control subject">
+                                <input type="text" id="subject" name="subject" class="form-control">
                                 <label for="subject" class="">Subject</label>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                         <div class="col-md-12">
 
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control msg md-textarea"></textarea>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                                 <label for="message">Your message</label>
                             </div>
 
@@ -189,7 +189,7 @@
                     </div>
                     <!--Grid row-->
                     <div class=" text-md-left ">
-                      <button class="btn btn-primary submit-button" type="submit">Submit</button>
+                        <a  class="btn btn-primary submit-button" onclick="document.getElementById('contact-form').submit();">Submit</a>
                     </div>
                 </form>
             </div>
@@ -207,7 +207,17 @@
                                 <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="./services.html">Services</a>
+                                <div class="dropdown">
+                                  <button>services</button>
+                                  <div class="dropdown-content">
+                                  <a href="./grc.html">Governance Risk compliance (GRC)</a>
+                                  <a href="./IT.html">Information Technology</a>
+                                  <a href="mrm.html">Model Risk Management & Quants</a>
+                                  <a href="aas.html">Audit & Assessment Support</a>
+                                  <a href="agiless.html">Agile support services</a>
+                                  <a href="#">Banking & Capital Markets</a>
+                                  </div>
+                                </div>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="./About.html">About</a>
@@ -236,42 +246,5 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-<script>
-
-const form = document.querySelector('.contact-form');
-
-
-      
-      function sendMsg(e) {
-        e.preventDefault();
-        
-        name = document.querySelector('.name'),
-        email = document.querySelector('.email'),
-        msg = document.querySelector('.msg'),
-        subject = document.querySelector('.subject');
-
-      
-        Email.send({
-          SecureToken : "7eea14c8-882f-4a75-ad67-99786781ac61",
-          To : 'charlieraph31@gmail.com',
-          From : email.value,
-          Subject : subject.value,
-          Body : msg.value
-          }).then(
-            message => alert(message)
-          );
-      
-      }
-
-      // add the event listener submit
-
-        form.addEventListener('submit', sendMsg);
-
-
-</script>
-
 </body>
 </html>

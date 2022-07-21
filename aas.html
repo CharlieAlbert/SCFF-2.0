@@ -24,7 +24,18 @@
                 <a class="nav-link" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./services.html">Services</a>
+                <div class="dropdown">
+                  <button>services <img src="./img/icons8_expand_arrow_60px.png"/></button>
+                  <div class="dropdown-content">
+                  <a href="./grc.html">Governance Risk compliance (GRC)</a>
+                  <a href="./IT.html">Information Technology</a>
+                  <a href="mrm.html">Model Risk Management & Quants</a>
+                  <a href="aas.html">Audit & Assessment Support</a>
+                  <a href="agiless.html">Agile support services</a>
+                  <a href="#">Banking & Capital Markets</a>
+
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./About.html">About</a>
@@ -67,7 +78,7 @@
             
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" class="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                     <h2 class="h1-responsive font-weight-bold my-4 get-in-touch-h1">Get in touch</h2>
                     <!--Grid row-->
                     <div class="row">
@@ -75,7 +86,7 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control name">
+                                <input type="text" id="name" name="name" class="form-control">
                                 <label for="name" class="">Your name</label>
                             </div>
                         </div>
@@ -84,7 +95,7 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control email">
+                                <input type="text" id="email" name="email" class="form-control">
                                 <label for="email" class="">Your email</label>
                             </div>
                         </div>
@@ -97,7 +108,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control subject">
+                                <input type="text" id="subject" name="subject" class="form-control">
                                 <label for="subject" class="">Subject</label>
                             </div>
                         </div>
@@ -111,7 +122,7 @@
                         <div class="col-md-12">
 
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control msg md-textarea"></textarea>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                                 <label for="message">Your message</label>
                             </div>
 
@@ -119,7 +130,7 @@
                     </div>
                     <!--Grid row-->
                     <div class=" text-md-left ">
-                      <button class="btn btn-primary submit-button" type="submit">Submit</button>
+                        <a  class="btn btn-primary submit-button" onclick="document.getElementById('contact-form').submit();">Submit</a>
                     </div>
                 </form>
             </div>
@@ -166,42 +177,5 @@
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-<script>
-
-const form = document.querySelector('.contact-form');
-
-
-      
-      function sendMsg(e) {
-        e.preventDefault();
-        
-        name = document.querySelector('.name'),
-        email = document.querySelector('.email'),
-        msg = document.querySelector('.msg'),
-        subject = document.querySelector('.subject');
-
-      
-        Email.send({
-          SecureToken : "7eea14c8-882f-4a75-ad67-99786781ac61",
-          To : 'charlieraph31@gmail.com',
-          From : email.value,
-          Subject : subject.value,
-          Body : msg.value
-          }).then(
-            message => alert(message)
-          );
-      
-      }
-
-      // add the event listener submit
-
-        form.addEventListener('submit', sendMsg);
-
-
-</script>
-
 </body>
 </html>
