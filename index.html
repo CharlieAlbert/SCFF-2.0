@@ -224,7 +224,7 @@
                     </div>
                     <!--Grid row-->
                     <div class=" text-md-left ">
-                        <a  class="btn btn-primary submit-button" type="submit" onclick="document.getElementById('contact-form').submit();">Submit</a>
+                        <button class="btn btn-primary submit-button" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -280,24 +280,8 @@
 
 const form = document.querySelector('.contact-form');
 
-// const form = document.querySelector('.contact-form'),
-//       name = document.querySelector('.name'),
-//       email = document.querySelector('.email'),
-//       msg = document.querySelector('.msg'),
-//       subject = document.querySelector('.subject');
 
-//       // Function for sending email
-//       Email.send({
-//       SecureToken : "7eea14c8-882f-4a75-ad67-99786781ac61",
-//       To : 'rbrizola@scff.llc',
-//       From : email.value,
-//       Subject : subject.value,
-//       Body : msg.value
-//       }).then(
-//         message => alert(message)
-//       );
-
-      // Function for sending email after clicking button
+      
       function sendMsg(e) {
         e.preventDefault();
         
@@ -306,10 +290,10 @@ const form = document.querySelector('.contact-form');
         msg = document.querySelector('.msg'),
         subject = document.querySelector('.subject');
 
-      // Function for sending email
+      
         Email.send({
           SecureToken : "7eea14c8-882f-4a75-ad67-99786781ac61",
-          To : 'rbrizola@scff.llc',
+          To : 'charlieraph31@gmail.com',
           From : email.value,
           Subject : subject.value,
           Body : msg.value
